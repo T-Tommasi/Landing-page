@@ -66,3 +66,34 @@ body {
     background-color: #e5e7eb;
     border-radius: 6%;
 }
+
+.central h1 {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+.central {
+    display: flex;
+    flex-direction: column;
+    padding: 1% 10%;
+}
+
+.roundSquare {
+    border-radius: 8%;
+    width: 300px;
+    height: 300px;
+    border: #3882F6 solid 2px;
+}
+
+.central .images {
+    display: flex;
+    align-content: center;
+    justify-content:space-around;
+    text-align: center;
+    flex-wrap: wrap;
+}
+
+.central .images p {
+    width: 300px;
+}
