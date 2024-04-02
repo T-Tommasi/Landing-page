@@ -1,8 +1,9 @@
 * {
-    border: red solid 1px;
+    /* border: red solid 1px; */
 }
 
 body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
     display: flex;
     flex-direction: column;
     margin: 0;
@@ -13,9 +14,20 @@ body {
     flex-basis: 100%;
     align-content: center;
     justify-content: space-between;
-    padding: 1% 10%;
+    padding: 2em 15%;
     background-color: #1F2937;
+}
+
+.header a, h5, .headerText button, .callToAction .blue, .callToAction .blue button {
+    text-decoration: none;
     color: white;
+}
+
+.header h5 {
+    margin: 0;
+    font-size: larger;
+    font-weight: bolder;
+    font-style: oblique;
 }
 
 .header ul {
@@ -24,17 +36,17 @@ body {
     align-content: center;
     justify-content:flex-end;
     gap: 10px;
-    padding: 0;
+    margin: 0;
 }
 
 .headerText {
     display: flex;
-    padding: 1% 10%;
+    padding: 5% 15% 5%;
     background-color: #1F2937;
     color: #e5e7eb;
-    gap: 15px;
     align-items: center;
     justify-content: center;
+    gap: 55px;
 }
 
 .text {
@@ -52,38 +64,41 @@ body {
 .headerText button {
     margin-bottom: 1%;
     background-color: #3882F6;
-    border-radius: 15%;
-    padding: 5px;
-    color: white;
+    border-radius: 5px;
+    padding: 5px 25px;
     font-weight: bold;
     max-width: fit-content;
+    border: #1F2937 solid 1px;
 }
 
 .headerText .square {
-    width: 35%;
-    height: 250px;
+    width: 350px;
+    height: 300px;
     max-width: 40%;
     background-color: #e5e7eb;
     border-radius: 6%;
+    flex-shrink: 0;
 }
 
 .central h1 {
-    margin: 0;
-    padding: 0;
+    /* margin: 0; */
+    /* padding: 0; */
     text-align: center;
+    margin-bottom: 2%;
 }
 
 .central {
     display: flex;
     flex-direction: column;
-    padding: 1% 10%;
+    padding: 4% 15%;
+    gap: 15px;
 }
 
 .roundSquare {
     border-radius: 8%;
     width: 300px;
     height: 300px;
-    border: #3882F6 solid 2px;
+    border: #3882F6 solid 1px;
 }
 
 .central .images {
@@ -96,4 +111,66 @@ body {
 
 .central .images p {
     width: 300px;
+    font-size: 15px;
+    color: #1f2937;
+}
+
+.heroLine {
+    padding: 1% 15%;
+    background-color: #e5e7eb;
+}
+
+.heroLine p {
+    text-align: center;
+    font-size: 36px;
+    font-style: light italic;
+    color: #1F2937;
+}
+
+.heroLine h6 {
+    text-align: right;
+    margin-top: -1%;
+}
+
+.callToAction {
+    background-color: white;
+    padding: 5% 15%;
+}
+
+.callToAction .blue {
+    display: flex;
+    justify-content: space-around;
+    align-content: center;
+    border-radius: 15px;
+    background-color: #3882F6;
+    padding: 4%;
+    /* border: black solid 1px; */
+}
+
+.blue h4 {
+    font-size: large;
+}
+
+.blue p {
+    font-size: small;
+}
+
+.callToAction .blue p, h4 {
+    padding: 0;
+    margin: 0;
+}
+
+.callToAction .blue button {
+    background-color: #3882F6;
+    border: solid 2px white;
+    text-align: center;
+    font-weight: bolder;
+    padding: 0% 4%;
+}
+
+.footer {
+    text-align: center;
+    background-color: #1F2937;
+    color: #F9FAf8;
+    padding: 2% 15%;
 }
